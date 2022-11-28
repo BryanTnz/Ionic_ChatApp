@@ -1,8 +1,8 @@
 <ion-header>
-  <ion-toolbar color="light">
-    <ion-title class="title1">Chat de amigos</ion-title>
+  <ion-toolbar color="dark">
+    <ion-title class="title1">Chat Grupal</ion-title>
     <ion-buttons slot="end">
-      <ion-button color="medium" (click)="logout()">
+      <ion-button color="light" (click)="logout()">
         <ion-icon name="log-out-sharp"></ion-icon>
       </ion-button>
 
@@ -23,6 +23,8 @@
     </ion-card-content>
   </ion-card>
 </ion-content>
+
+
 <ion-card-content class="imageContainerButton" *ngIf="!isUploading && !isUploaded">
   <ion-button class="imageContainer">
     <input id="uploadBtn" type="file" class="upload" (change)="uploadFile($event.target.files)" />
@@ -48,6 +50,9 @@
   </ion-card-header>
 
 </ion-card>
+
+
+
 <ion-footer id="final-scroll">
 
   <ion-toolbar>
@@ -57,8 +62,9 @@
       <ion-button (click)="CreateRecord()">
         <ion-icon name="send"></ion-icon>
       </ion-button>
-
     </ion-buttons>
+
+    
   </ion-toolbar>
 
 </ion-footer>
